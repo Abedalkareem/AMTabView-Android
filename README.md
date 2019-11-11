@@ -83,7 +83,10 @@ To run the example project, clone the repo, and run the project.
 ## Customization
 
 ```
- Need to be implemented.
+  app:tabColor="@android:color/holo_red_dark"
+  app:selectedTabTintColor="@android:color/black"
+  app:unSelectedTabTintColor="@android:color/background_light"
+  app:ballColor="@android:color/holo_green_dark"
 ```
 
 ## Author
