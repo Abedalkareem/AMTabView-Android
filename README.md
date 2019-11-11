@@ -3,9 +3,7 @@
 </p>
 
 ## Screenshot
-<p align="center">
- <img src="https://raw.githubusercontent.com/Abedalkareem/AMTabView-Android/master/screenshot.gif"  >
-</p>
+ <img src="https://raw.githubusercontent.com/Abedalkareem/AMTabView-Android/master/screenshot.gif" width="240" >
 
 ## Example
 
