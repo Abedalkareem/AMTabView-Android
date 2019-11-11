@@ -96,20 +96,35 @@ open class AMTabView : View {
 
   private var previousTabIndex: Float = 0F
 
-  private var tabColor = Color.parseColor("#FFFFFF")
-  private var ballColor = Color.parseColor("#C07298")
-  private var selectedTabTintColor = Color.parseColor("#FFFFFF")
-  private var unSelectedTabTintColor = Color.parseColor("#000000")
+  private var tabColor: Int = 0
+  private var ballColor: Int = 0
+  private var selectedTabTintColor: Int = 0
+  private var unSelectedTabTintColor: Int = 0
 
   //endregion
 
-  constructor(context: Context?) : super(context)
-  constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
-  constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(
-    context,
-    attrs,
-    defStyleAttr
-  )
+  //region Constructors
+  constructor(context: Context) : super(context) {
+    setupAttributes(null)
+  }
+
+  constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+    setupAttributes(attrs)
+  }
+
+  constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+    setupAttributes(attrs)
+  }
+  //endregion
+
+  private fun setupAttributes(attrs: AttributeSet?) {
+    val typedArray = context.theme.obtainStyledAttributes(attrs, R.styleable.AMTabView, 0, 0)
+    tabColor = typedArray.getColor(R.styleable.AMTabView_tabColor, Color.parseColor("#FFFFFF"))
+    ballColor = typedArray.getColor(R.styleable.AMTabView_ballColor, Color.parseColor("#C07298"))
+    selectedTabTintColor = typedArray.getColor(R.styleable.AMTabView_selectedTabTintColor, Color.parseColor("#FFFFFF"))
+    unSelectedTabTintColor = typedArray.getColor(R.styleable.AMTabView_unSelectedTabTintColor, Color.parseColor("#000000"))
+  }
+
 
   override fun performClick(): Boolean {
     super.performClick()
