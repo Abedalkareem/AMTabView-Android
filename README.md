@@ -89,6 +89,26 @@ To run the example project, clone the repo, and run the project.
   app:ballColor="@android:color/holo_green_dark"
 ```
 
+## Installation 
+
+Add JitPack repository in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+}
+```
+
+Add the dependency
+```
+dependencies {
+  implementation 'com.github.Abedalkareem:AMTabView-Android:Tag'
+}
+```
+
 ## Author
 
 Abedalkareem, abedalkareem.omreyh@yahoo.com
