@@ -1,0 +1,2 @@
+include ':app', ':tabview'
+rootProject.name='AMTabView'
