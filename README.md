@@ -5,6 +5,10 @@
 ## Screenshot
  <img src="https://raw.githubusercontent.com/Abedalkareem/AMTabView-Android/master/screenshot.gif" width="240" >
 
+## Android
+
+It's also available on android you can find it [here](https://github.com/Abedalkareem/AMTabView).
+
 ## Example
 
 To run the example project, clone the repo, and run the project.
