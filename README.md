@@ -5,9 +5,9 @@
 ## Screenshot
  <img src="https://raw.githubusercontent.com/Abedalkareem/AMTabView-Android/master/screenshot.gif" width="240" >
 
-## Android
+## iOS
 
-It's also available on android you can find it [here](https://github.com/Abedalkareem/AMTabView).
+It's also available on iOS you can find it [here](https://github.com/Abedalkareem/AMTabView).
 
 ## Example
 
