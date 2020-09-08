@@ -125,13 +125,6 @@ open class AMTabView : View {
     unSelectedTabTintColor = typedArray.getColor(R.styleable.AMTabView_unSelectedTabTintColor, Color.parseColor("#000000"))
   }
 
-
-  override fun performClick(): Boolean {
-    super.performClick()
-    onTabChangeListener?.let { it(selectedTabIndex.toInt()) }
-    return true
-  }
-
   override fun onTouchEvent(event: MotionEvent?): Boolean {
     val x = event?.x ?: 0F
 
@@ -141,6 +134,12 @@ open class AMTabView : View {
     performClick()
 
     return super.onTouchEvent(event)
+  }
+
+  override fun performClick(): Boolean {
+    super.performClick()
+    onTabChangeListener?.let { it(selectedTabIndex.toInt()) }
+    return true
   }
 
   private fun addTabsImages() {
